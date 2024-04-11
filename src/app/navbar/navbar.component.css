@@ -1,0 +1,14 @@
+nav{
+    height: 3vw;
+    padding: 1vw;
+    font-size: large;
+}
+
+.container{
+    width: 70vw;
+}
+
+li{
+    width: 12vw;
+    text-align: right;
+}

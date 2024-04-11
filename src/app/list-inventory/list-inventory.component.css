@@ -1,0 +1,22 @@
+h1 {
+    font-size: 80px;
+    width: 100%;
+    color: wheat;
+    text-align: center;
+    padding: 5vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+table {
+    width: 70vw;
+    font-size: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2%;
+}
