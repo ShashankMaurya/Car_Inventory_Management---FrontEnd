@@ -29,7 +29,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    height: 77vh;
+    height: 45vh;
 }
 
 input {
@@ -48,4 +48,12 @@ button {
     width: 12vw;
     height: auto;
 
+}
+
+h1 {
+    font-size: 80px;
+    width: 100%;
+    color: wheat;
+    text-align: center;
+    padding: 5vh;
 }

@@ -1,0 +1,23 @@
+<h1>Cars</h1>
+<div class="container">
+    <table class="table table-hover table-dark">
+        <thead>
+            <th scope="col">#</th>
+            <th scope="col">Car ID</th>
+            <th scope="col">Make</th>
+            <th scope="col">Model</th>
+            <th scope="col">Price</th>
+            <th scope="col">Year</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let element of cars; let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{element.id}}</td>
+                <td>{{element.make}}</td>
+                <td>{{element.model}}</td>
+                <td>{{element.price}}</td>
+                <td>{{element.year}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

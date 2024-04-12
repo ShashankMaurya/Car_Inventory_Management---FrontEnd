@@ -13,6 +13,7 @@ import { ListInventoryComponent } from './list-inventory/list-inventory.componen
 import { SuccessComponent } from './success/success.component';
 import { EnterUpdateIDComponent } from './enter-update-id/enter-update-id.component';
 import { InsertSuccessComponent } from './insert-success/insert-success.component';
+import { ListCarsComponent } from './list-cars/list-cars.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InsertSuccessComponent } from './insert-success/insert-success.componen
     ListInventoryComponent,
     SuccessComponent,
     EnterUpdateIDComponent,
-    InsertSuccessComponent
+    InsertSuccessComponent,
+    ListCarsComponent
   ],
   imports: [
     BrowserModule,

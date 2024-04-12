@@ -10,7 +10,7 @@ export class NavbarComponent {
 
   constructor(private router: Router) { }
 
-  listEntries(): void{
+  listEntries(): void {
     this.router.navigate(['listInventory']);
   }
 
@@ -24,6 +24,10 @@ export class NavbarComponent {
 
   deleteEntry(): void {
     this.router.navigate(['deleteEntry']);
+  }
+
+  listCars(): void {
+    this.router.navigate(['listCars']);
   }
 
 }
