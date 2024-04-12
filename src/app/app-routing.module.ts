@@ -11,8 +11,8 @@ const routes: Routes = [
   { path: 'updateEntry', component: UpdateEntryComponent },
   { path: 'deleteEntry', component: DeleteEntryComponent },
   { path: 'listInventory', component: ListInventoryComponent },
-  { path: 'success', component: SuccessComponent },
-  { path: '', pathMatch: 'full', redirectTo: 'listInventory' }
+  { path: 'success', component: SuccessComponent }
+  // { path: '', pathMatch: 'full', redirectTo: 'listInventory' }
 ];
 
 @NgModule({

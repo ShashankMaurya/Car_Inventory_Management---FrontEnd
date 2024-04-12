@@ -10,6 +10,10 @@ export class NavbarComponent {
 
   constructor(private router: Router) { }
 
+  listEntries(): void{
+    this.router.navigate(['listInventory']);
+  }
+
   addEntry(): void {
     this.router.navigate(['newEntry']);
   }
