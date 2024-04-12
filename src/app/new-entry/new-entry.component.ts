@@ -17,7 +17,7 @@ export class NewEntryComponent {
   constructor(private formBuilder: FormBuilder, private router: Router, private inventoryService: InventoryService) {
     this.myForm = this.formBuilder.group(
       {
-        carId: 0,
+        car_id: 0,
         quantity: 0
       }
     );
