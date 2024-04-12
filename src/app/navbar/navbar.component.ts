@@ -19,7 +19,7 @@ export class NavbarComponent {
   }
 
   updateEntry(): void {
-    this.router.navigate(['updateEntry']);
+    this.router.navigate(['enter-update-id']);
   }
 
   deleteEntry(): void {

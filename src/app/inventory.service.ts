@@ -9,15 +9,28 @@ import { Inventory } from './Inventory';
 export class InventoryService {
 
   private api_url = "http://localhost:8080/api/inventory"
+  private inventory: Inventory = new Inventory();
 
   constructor(private http: HttpClient) { }
 
-  getAll(): Observable<Inventory[]>{
+  getAll(): Observable<Inventory[]> {
     return this.http.get<Inventory[]>(`${this.api_url}/getAll`);
   }
 
-  addElement(inventory: Inventory): Observable<Inventory>{
+  addElement(inventory: Inventory): Observable<Inventory> {
     return this.http.post<Inventory>(`${this.api_url}/add`, inventory);
   }
-  
+
+  setInventoryObject(inv: Inventory): void {
+    this.inventory = inv;
+  }
+
+  getInventoryObject(): Inventory {
+    return this.inventory;
+  }
+
+  updateInventory(id: number, i: Inventory): Observable<Inventory> {
+    return this.http.put<Inventory>(`${this.api_url}/update/${id}`, i);
+  }
+
 }

@@ -1,1 +1,30 @@
-<p>update-entry works!</p>
+<div class="main">
+    <form action="#" method="get">
+        <h2>Update Inventory</h2>
+        <div class="child-container">
+
+            <div class="form-row left-row">
+                <div class="form-group col">
+                    <label for="quantity">ID</label>
+                    <input type="number" class="form-control-lg" name="InventoryID" id="InventoryID" required
+                        [(ngModel)]="inventory.id">
+                </div>
+                <div class="form-group col">
+                    <label for="id_car">Car ID</label>
+                    <input type="number" class="form-control-lg" name="carId" id="id_car"
+                        [(ngModel)]="inventory.car_id">
+                </div>
+                <div class="form-group col">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="form-control-lg" name="quantity" id="quantity" required
+                        [(ngModel)]="inventory.quantity">
+                </div>
+
+            </div>
+
+            <button (click)="updateInventory()" type="submit" class="btn btn-primary btn-lg">Update</button>
+
+        </div>
+
+    </form>
+</div>
