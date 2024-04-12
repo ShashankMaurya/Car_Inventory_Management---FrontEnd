@@ -12,6 +12,7 @@ import { DeleteEntryComponent } from './delete-entry/delete-entry.component';
 import { ListInventoryComponent } from './list-inventory/list-inventory.component';
 import { SuccessComponent } from './success/success.component';
 import { EnterUpdateIDComponent } from './enter-update-id/enter-update-id.component';
+import { InsertSuccessComponent } from './insert-success/insert-success.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EnterUpdateIDComponent } from './enter-update-id/enter-update-id.compon
     DeleteEntryComponent,
     ListInventoryComponent,
     SuccessComponent,
-    EnterUpdateIDComponent
+    EnterUpdateIDComponent,
+    InsertSuccessComponent
   ],
   imports: [
     BrowserModule,

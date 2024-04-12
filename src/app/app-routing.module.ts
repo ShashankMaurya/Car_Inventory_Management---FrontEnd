@@ -6,6 +6,7 @@ import { DeleteEntryComponent } from './delete-entry/delete-entry.component';
 import { ListInventoryComponent } from './list-inventory/list-inventory.component';
 import { SuccessComponent } from './success/success.component';
 import { EnterUpdateIDComponent } from './enter-update-id/enter-update-id.component';
+import { InsertSuccessComponent } from './insert-success/insert-success.component';
 
 const routes: Routes = [
   { path: 'newEntry', component: NewEntryComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'deleteEntry', component: DeleteEntryComponent },
   { path: 'listInventory', component: ListInventoryComponent },
   { path: 'success', component: SuccessComponent },
-  {path: 'enter-update-id', component: EnterUpdateIDComponent}
+  {path: 'enter-update-id', component: EnterUpdateIDComponent},
+  {path: 'insert-success/:id', component: InsertSuccessComponent}
   // { path: '', pathMatch: 'full', redirectTo: 'listInventory' }
 ];
 

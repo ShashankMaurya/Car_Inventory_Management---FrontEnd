@@ -26,8 +26,9 @@ export class NewEntryComponent {
   addEntry(): void {
     const formData = this.myForm.value;
     // console.log(this.myForm.value);
-    this.inventoryService.addElement(formData).subscribe(() => {
-      this.router.navigate(['/success']);
+    this.inventoryService.addElement(formData).subscribe((data) => {
+      // console.log(data);
+      this.router.navigate(['/insert-success', data]);
     })
   }
 }
