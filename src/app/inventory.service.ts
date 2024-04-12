@@ -15,4 +15,9 @@ export class InventoryService {
   getAll(): Observable<Inventory[]>{
     return this.http.get<Inventory[]>(`${this.api_url}/getAll`);
   }
+
+  addElement(inventory: Inventory): Observable<Inventory>{
+    return this.http.post<Inventory>(`${this.api_url}/add`, inventory);
+  }
+  
 }

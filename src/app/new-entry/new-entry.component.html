@@ -1,1 +1,22 @@
-<p>new-entry works!</p>
+<div class="main">
+    <form (ngSubmit)="addEntry()" [formGroup]="myForm">
+        <h2>Update Inventory</h2>
+        <div class="child-container">
+
+            <div class="form-row left-row">
+                <div class="form-group col">
+                    <label for="id_car">Car ID</label>
+                    <input type="number" class="form-control-lg" name="carId" id="id_car" required formControlName="carId">
+                </div>
+                <div class="form-group col">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="form-control-lg" name="quantity" id="quantity" required formControlName="quantity">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+
+        </div>
+
+    </form>
+</div>
